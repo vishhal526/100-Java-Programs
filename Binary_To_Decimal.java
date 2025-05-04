@@ -15,7 +15,7 @@ public class Binary_To_Decimal {
 
             char a = binary.charAt(i);
             if (a == '1') {
-                decimal = decimal + Math.pow(2, binary.length() - i - 1);
+                decimal = decimal + Math.pow(2, binary.length() - (i + 1));
             }
 
         }
