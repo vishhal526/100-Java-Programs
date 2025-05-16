@@ -13,11 +13,7 @@ public class Decimal_to_Binary {
 
         while (decimal > 0) {
 
-            if (decimal % 2 == 0) {
-                binary.append(0);
-            } else {
-                binary.append(1);
-            }
+            binary.append(decimal % 2);
 
             decimal = decimal / 2;
 
